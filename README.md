@@ -15,7 +15,7 @@ Stay hydrated! This Chrome extension reminds you to drink water at regular inter
 ## 📂 Installation
 
 1. **Download or Clone this Repository:**
-git clone https://github.com/ayoubane/drink-water-reminder.git
+git clone [https://github.com/Ayoubane/drinking-water-reminder.git](https://github.com/Ayoubane/drinking-water-reminder.git)
 
 2. **Open Chrome and navigate to:**
 chrome://extensions/
