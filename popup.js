@@ -7,15 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (alarm) {
       // Alarm is active
       startBtn.textContent = "Edit";
+      startBtn.classList.add("edit-mode");
       stopBtn.disabled = false;
 
-      // Load saved interval
       chrome.storage.local.get(["interval"], (result) => {
         intervalInput.value = result.interval || 30;
       });
     } else {
       // No alarm
       startBtn.textContent = "Start";
+      startBtn.classList.remove("edit-mode");
       stopBtn.disabled = true;
       intervalInput.value = 30;
     }
@@ -28,6 +29,7 @@ startBtn.addEventListener("click", () => {
     chrome.storage.local.set({ interval });
 
     startBtn.textContent = "Edit";
+    startBtn.classList.add("edit-mode");
     stopBtn.disabled = false;
   });
 });
@@ -37,6 +39,7 @@ stopBtn.addEventListener("click", () => {
     chrome.storage.local.remove("interval");
 
     startBtn.textContent = "Start";
+    startBtn.classList.remove("edit-mode");
     stopBtn.disabled = true;
     intervalInput.value = 30;
   });

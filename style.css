@@ -65,6 +65,14 @@ button {
   background-color: #0056b3;
 }
 
+#start.edit-mode {
+  background-color: #28a745; /* Green */
+}
+
+#start.edit-mode:hover {
+  background-color: #228839;
+}
+
 #stop {
   background-color: #dc3545;
 }
