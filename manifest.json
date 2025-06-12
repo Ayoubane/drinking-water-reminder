@@ -3,7 +3,7 @@
   "name": "Drink Water Reminder",
   "version": "1.0",
   "description": "Reminds you to drink water at regular intervals.",
-  "permissions": ["notifications", "alarms"],
+  "permissions": ["notifications", "alarms", "storage"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"

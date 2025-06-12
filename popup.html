@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Drink Water Reminder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <h3>Water Reminder</h3>
-  <label>Interval (mins): <input type="number" id="interval" value="30"></label><br><br>
-  <button id="start">Start</button>
-  <button id="stop">Stop</button>
+  <div class="card">
+    <h1><img src="icon.png" alt="Water Icon">Hydration Reminder</h1>
+
+    <label for="interval">Interval (in minutes):</label>
+    <input id="interval" type="number" value="30" min="1" />
+
+    <div class="button-group">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
