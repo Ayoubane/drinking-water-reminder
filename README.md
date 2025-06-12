@@ -22,7 +22,7 @@ chrome://extensions/
 
 3. **Enable Developer Mode** (toggle in the top right).
 
-4. **Click on "Load unpacked"** and select the `drink-water-reminder` folder.
+4. **Click on "Load unpacked"** and select the `drinking-water-reminder` folder.
 
 5. The extension should now appear in your Chrome toolbar.
 
