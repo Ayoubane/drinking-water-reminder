@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Drink Water Reminder",
+  "version": "1.0",
+  "description": "Reminds you to drink water at regular intervals.",
+  "permissions": ["notifications", "alarms"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
